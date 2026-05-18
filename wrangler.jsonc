@@ -1,4 +1,5 @@
 {
   "name": "portofolio-next",
-
+  "compatibility_date": "2026-05-18",
+  "compatibility_flags": ["nodejs_compat"]
 }
