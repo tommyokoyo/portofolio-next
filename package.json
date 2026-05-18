@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "pages:build": "next build && npx @cloudflare/next-on-pages",
-    "deploy": "wrangler deploy"
+    "deploy": "npx @cloudflare/next-on-pages &&wrangler pages deploy"
   },
   "dependencies": {
     "@tailwindcss/typography": "^0.5.15",
