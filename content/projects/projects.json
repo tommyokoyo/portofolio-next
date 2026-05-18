@@ -1,0 +1,110 @@
+[
+  {
+    "slug": "insecure-api",
+    "title": "Insecure API",
+    "description": "Security training API demonstrating OWASP API vulnerabilities and secure coding patterns",
+    "tags": ["AppSec", "DevSecOps", "API Security"],
+    "githubUrl": "https://github.com/tommyokoyo/Insecure-API",
+    "preview": {
+      "what": "An intentionally vulnerable API system with insecure and secure implementations.",
+      "why": "Built to make OWASP API risks easier to test, explain, and fix.",
+      "focus": "API security testing, secure coding patterns, and CI/CD security checks."
+    },
+    "caseStudy": {
+      "context": "Insecure API is a security training API that demonstrates common OWASP API vulnerabilities alongside safer implementation patterns.",
+      "problem": "API security issues are easier to understand when developers can see the insecure behavior, test it directly, and compare it with a secure version.",
+      "systemDesign": [
+        "The project is structured as an intentionally vulnerable API with routes that demonstrate common API security failures.",
+        "Secure implementation examples sit alongside vulnerable patterns so the difference is visible in code and behavior.",
+        "The repository includes CI/CD security pipeline integration to show how automated checks can support API security work."
+      ],
+      "technicalFocus": [
+        "OWASP API Security Top 10 examples",
+        "Authentication and authorization failure patterns",
+        "Secure coding comparisons",
+        "DevSecOps pipeline integration"
+      ]
+    }
+  },
+  {
+    "slug": "mpesa-simulator",
+    "title": "M-Pesa Simulator",
+    "description": "Offline replica of M-Pesa Daraja APIs for testing payment workflows",
+    "tags": ["AppSec", "API Security"],
+    "githubUrl": "https://github.com/tommyokoyo/MpesaSimulatorDemo",
+    "preview": {
+      "what": "An offline simulator for M-Pesa Daraja API payment flows.",
+      "why": "Built to test payment integrations without relying on live payment infrastructure.",
+      "focus": "Payment API behavior, callback handling, and integration testing."
+    },
+    "caseStudy": {
+      "context": "M-Pesa Simulator is an offline replica of M-Pesa Daraja APIs used to test payment workflows in a controlled local environment.",
+      "problem": "Payment integrations need repeatable testing for callbacks, request states, and failure handling before they touch real payment systems.",
+      "systemDesign": [
+        "The simulator models payment API behavior so developers can test integration flows locally.",
+        "It supports workflow testing around request creation, API responses, and payment callbacks.",
+        "The project helps separate payment-flow testing from production credentials and live transaction dependencies."
+      ],
+      "technicalFocus": [
+        "Payment API testing",
+        "Callback workflow validation",
+        "Offline integration testing",
+        "API behavior simulation"
+      ]
+    }
+  },
+  {
+    "slug": "ios-security",
+    "title": "iOS Security",
+    "description": "iOS application security auditing scripts and guides",
+    "tags": ["Mobile Security", "AppSec"],
+    "githubUrl": "https://github.com/tommyokoyo/IOS-security",
+    "preview": {
+      "what": "A repository of iOS application security auditing scripts and guides.",
+      "why": "Built to support repeatable iOS security review and testing workflows.",
+      "focus": "Mobile app auditing, testing notes, and practical security checks."
+    },
+    "caseStudy": {
+      "context": "iOS Security collects scripts and guides used for iOS application security auditing and mobile review workflows.",
+      "problem": "Mobile security testing benefits from repeatable checks, documented workflows, and tooling that keeps audits consistent.",
+      "systemDesign": [
+        "The repository groups iOS security scripts and reference notes around practical audit tasks.",
+        "Guides are organized to support repeatable testing instead of one-off manual checks.",
+        "The structure is meant to help security review move from setup into evidence collection faster."
+      ],
+      "technicalFocus": [
+        "iOS application security auditing",
+        "Mobile security testing workflows",
+        "Security review guides",
+        "Script-assisted analysis"
+      ]
+    }
+  },
+  {
+    "slug": "frida-scripts",
+    "title": "Frida Scripts",
+    "description": "Runtime instrumentation scripts for Android security testing",
+    "tags": ["Mobile Security", "Frida", "Runtime Analysis"],
+    "githubUrl": "https://github.com/tommyokoyo/Frida-scripts",
+    "preview": {
+      "what": "A collection of Frida scripts for Android runtime instrumentation.",
+      "why": "Built to inspect app behavior while the application is running.",
+      "focus": "Runtime analysis, tamper testing, SSL pinning checks, and Android behavior inspection."
+    },
+    "caseStudy": {
+      "context": "Frida Scripts contains runtime instrumentation scripts used during Android security testing and behavioral analysis.",
+      "problem": "Static review does not always show how an Android app behaves during execution, especially around runtime checks and tamper controls.",
+      "systemDesign": [
+        "The repository organizes Frida scripts around common Android testing tasks.",
+        "Scripts are written to hook methods, inspect runtime behavior, and support repeatable mobile testing.",
+        "The project supports faster setup for runtime analysis during Android application assessments."
+      ],
+      "technicalFocus": [
+        "Frida-based runtime instrumentation",
+        "Android security testing",
+        "Tamper detection testing",
+        "Behavioral inspection"
+      ]
+    }
+  }
+]
