@@ -33,8 +33,7 @@ yarn-error.log*
 
 # typescript
 *.tsbuildinfo
-<<<<<<< HEAD
 next-env.d.ts
-=======
-next-env.d.ts
->>>>>>> c7d646f (MVP 1)
+
+.wrangler
+.open-next
