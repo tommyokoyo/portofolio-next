@@ -86,7 +86,7 @@ export function HomePage() {
             </motion.span>
           </h1>
           <p className="mt-7 text-lg leading-8 text-muted sm:text-xl">
-            I&apos;m a Security Engineer working on application behavior, runtime systems, and delivery pipeline security across mobile and backend environments.
+            I&apos;m Thomas, a Security Engineer working on application behavior, runtime systems, and delivery pipeline security across mobile and backend environments.
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-3">
             {["API security", "Mobile reverse engineering", "CI/CD security", "Runtime instrumentation"].map((tag) => (
