@@ -5,8 +5,10 @@ export type WorkProject = {
   title: string;
   description: string;
   tags: string[];
-  githubUrl: string;
+  type?: "backend" | "frontend" | "security" | "fullstack";
+  githubUrl?: string;
   externalUrl?: string;
+  interfaceFocus?: string[];
   preview: {
     what: string;
     why: string;

@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowLeft, ArrowUpRight, Github } from "lucide-react";
+import { ArrowLeft, ArrowUpRight, ExternalLink, Github } from "lucide-react";
 import Link from "next/link";
 import { PortfolioShell } from "@/components/portfolio-system";
 import { Surface } from "@/components/surface";
@@ -65,27 +65,43 @@ export function WorkCaseStudyPage({ project }: { project: WorkProject }) {
           </Surface>
         </div>
 
+        {project.interfaceFocus && (
+          <div className="mt-4">
+            <Surface className="p-6 sm:p-7">
+              <h2 className="text-2xl font-semibold text-ink">Interface Focus</h2>
+              <div className="mt-5 space-y-3">
+                {project.interfaceFocus.map((item) => (
+                  <p key={item} className="text-sm leading-6 text-muted">{item}</p>
+                ))}
+              </div>
+            </Surface>
+          </div>
+        )}
+
         <Surface className="mt-4 p-6 sm:p-7">
           <h2 className="text-2xl font-semibold text-ink">Links</h2>
           <div className="mt-5 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
-            <a
-              href={project.githubUrl}
-              target="_blank"
-              rel="noreferrer"
-              className="inline-flex w-full items-center justify-center gap-2 rounded-full border border-accent/30 bg-accentSoft/70 px-5 py-3 text-sm font-medium text-ink transition hover:border-accent/60 hover:bg-accentSoft sm:w-auto"
-            >
-              <Github size={17} />
-              View on GitHub
-              <ArrowUpRight size={15} />
-            </a>
             {project.externalUrl && (
               <a
                 href={project.externalUrl}
                 target="_blank"
                 rel="noreferrer"
+                className="inline-flex w-full items-center justify-center gap-2 rounded-full border border-accent/30 bg-accentSoft/70 px-5 py-3 text-sm font-medium text-ink transition hover:border-accent/60 hover:bg-accentSoft sm:w-auto"
+              >
+                <ExternalLink size={17} />
+                Visit Live Site
+                <ArrowUpRight size={15} />
+              </a>
+            )}
+            {project.githubUrl && (
+              <a
+                href={project.githubUrl}
+                target="_blank"
+                rel="noreferrer"
                 className="inline-flex w-full items-center justify-center gap-2 rounded-full border border-line/70 bg-surface/60 px-5 py-3 text-sm font-medium text-ink transition hover:border-accent/50 hover:bg-accentSoft/60 sm:w-auto"
               >
-                External Reference
+                <Github size={17} />
+                View on GitHub
                 <ArrowUpRight size={15} />
               </a>
             )}

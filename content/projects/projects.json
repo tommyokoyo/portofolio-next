@@ -3,6 +3,7 @@
     "slug": "insecure-api",
     "title": "Insecure API",
     "description": "Security training API demonstrating OWASP API vulnerabilities and secure coding patterns",
+    "type": "backend",
     "tags": ["AppSec", "DevSecOps", "API Security"],
     "githubUrl": "https://github.com/tommyokoyo/Insecure-API",
     "preview": {
@@ -30,6 +31,7 @@
     "slug": "mpesa-simulator",
     "title": "M-Pesa Simulator",
     "description": "Offline replica of M-Pesa Daraja APIs for testing payment workflows",
+    "type": "backend",
     "tags": ["AppSec", "API Security"],
     "githubUrl": "https://github.com/tommyokoyo/MpesaSimulatorDemo",
     "preview": {
@@ -57,6 +59,7 @@
     "slug": "ios-security",
     "title": "iOS Security",
     "description": "iOS application security auditing scripts and guides",
+    "type": "security",
     "tags": ["Mobile Security", "AppSec"],
     "githubUrl": "https://github.com/tommyokoyo/IOS-security",
     "preview": {
@@ -84,6 +87,7 @@
     "slug": "frida-scripts",
     "title": "Frida Scripts",
     "description": "Runtime instrumentation scripts for Android security testing",
+    "type": "security",
     "tags": ["Mobile Security", "Frida", "Runtime Analysis"],
     "githubUrl": "https://github.com/tommyokoyo/Frida-scripts",
     "preview": {
@@ -106,5 +110,45 @@
         "Behavioral inspection"
       ]
     }
+  },
+{
+  "slug": "algorithms",
+  "title": "Algorithms",
+  "description": "An interactive learning platform for understanding data structures and algorithms through execution traces, step-by-step visualizations, guided predictions, and behavioral comparisons.",
+  "type": "frontend",
+  "tags": ["Frontend", "Algorithms", "Interactive Learning"],
+  "externalUrl": "https://alp.okoyo.dev",
+  "interfaceFocus": [
+    "Step-by-step visualization of algorithm execution and state changes.",
+    "Guided prediction checkpoints that encourage learners to reason about what an algorithm will do next.",
+    "Side-by-side comparison of algorithm behavior using shared inputs and normalized execution metrics."
+  ],
+  "preview": {
+    "what": "An interactive platform for learning algorithms by observing and reasoning about how they execute step by step.",
+    "why": "Built to bridge the gap between reading algorithm code and developing an intuitive understanding of how algorithms transform data, make decisions, and differ in efficiency.",
+    "focus": "Execution visualization, guided learning, algorithm behavior, complexity, and comparative analysis."
+  },
+  "caseStudy": {
+    "context": "Algorithms is an interactive learning platform designed to make data structures and algorithms easier to understand by exposing their internal execution as observable, step-by-step state transitions.",
+    "problem": "Algorithms are often learned through pseudocode, complexity notation, and final outputs. This can make it difficult to understand what actually happens during execution, why an algorithm behaves the way it does, and how different algorithms approach the same problem.",
+    "systemDesign": [
+      "Algorithms produce semantic execution traces that can be replayed as step-by-step learning experiences.",
+      "Each algorithm combines implementation details, complexity information, visual execution states, and guided prediction checkpoints into a structured lesson.",
+      "A shared algorithm model allows different implementations to participate in the same visualization and learning system.",
+      "The sorting comparison laboratory runs multiple algorithms against the same input and normalizes their execution metrics for direct behavioral comparison.",
+      "Current learning modules include Bubble Sort, Selection Sort, Insertion Sort, Merge Sort, Quick Sort, recursion, and heap-based data structure concepts.",
+      "The platform is structured as a pnpm monorepo separating the algorithm engine, algorithm implementations, visualization contracts, shared code, and the Next.js learning application."
+    ],
+    "technicalFocus": [
+      "Algorithm execution tracing",
+      "Data structure and algorithm visualization",
+      "Guided prediction-based learning",
+      "Algorithm complexity and behavioral comparison",
+      "Deterministic trace replay",
+      "Reusable algorithm definitions and contracts",
+      "Next.js and TypeScript",
+      "Monorepo architecture"
+    ]
   }
+}
 ]

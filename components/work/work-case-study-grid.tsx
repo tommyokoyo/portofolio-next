@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowUpRight, Github, ShieldCheck } from "lucide-react";
+import { ArrowUpRight, ExternalLink, Github, ShieldCheck } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { PortfolioShell } from "@/components/portfolio-system";
@@ -82,7 +82,9 @@ function ProjectTile({
       <Surface interactive className="relative flex h-full min-h-[260px] flex-col overflow-hidden p-5 sm:p-6">
         <div className="flex items-start justify-between gap-4">
           <div>
-            <p className="text-xs font-medium uppercase tracking-[0.16em] text-muted">Case study</p>
+            <p className="text-xs font-medium uppercase tracking-[0.16em] text-muted">
+              {project.type === "frontend" ? "Frontend case study" : "Case study"}
+            </p>
             <h2 className="mt-3 text-2xl font-semibold leading-tight text-ink">{project.title}</h2>
           </div>
           <span className="inline-flex size-10 shrink-0 items-center justify-center rounded-full border border-line/70 bg-canvas/35 text-accent">
@@ -102,10 +104,20 @@ function ProjectTile({
 
         <div className="mt-auto pt-6">
           <StructuredPreview project={project} active={active} />
-          <div className="mt-4 flex items-center gap-2 text-xs text-muted">
-            <Github size={14} />
-            Repository linked
-            <ArrowUpRight size={13} />
+          <div className="mt-4 flex flex-wrap items-center gap-2 text-xs text-muted">
+            {project.githubUrl && (
+              <span className="inline-flex items-center gap-2">
+                <Github size={14} />
+                Repository linked
+              </span>
+            )}
+            {project.externalUrl && (
+              <span className="inline-flex items-center gap-2 rounded-full border border-accent/30 bg-accentSoft/70 px-3 py-1 text-ink">
+                <ExternalLink size={13} />
+                Live surface
+                <ArrowUpRight size={12} />
+              </span>
+            )}
           </div>
         </div>
       </Surface>
