@@ -1,8 +1,8 @@
 ---
 title: "Network Traffic Analysis in Security Testing"
-description: "A beginner-friendly breakdown of how network traffic analysis is used to detect anomalies, leaks, and unauthorized behavior in real systems."
+description: "Using network traffic inspection to detect anomalies, leaks, and unauthorized behavior in real systems."
 date: 2024-09-21
-tags: ["Network Security", "Wireshark", "Analysis"]
+tags: ["Network Security", "Traffic Analysis", "Wireshark"]
 draft: false
 ---
 ## Understanding Network Traffic Analysis

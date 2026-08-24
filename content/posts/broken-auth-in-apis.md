@@ -1,8 +1,8 @@
 ---
 title: "Broken Authorization in APIs"
-description: "A beginner-friendly breakdown of common authorization failures in APIs and how they appear in real-world systems."
+description: "Common authorization failure patterns in APIs and how they show up during application security testing."
 date: 2025-01-10
-tags: ["API Security", "Auth", "AppSec"]
+tags: ["API Security", "Authorization", "AppSec"]
 draft: false
 ---
 ## Understanding Broken Authorization in APIs

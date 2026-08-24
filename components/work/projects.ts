@@ -9,6 +9,15 @@ export type WorkProject = {
   githubUrl?: string;
   externalUrl?: string;
   interfaceFocus?: string[];
+  evidence: {
+    role: string;
+    stack: string[];
+    status: string;
+    source: string;
+    built: string[];
+    demonstrates: string[];
+    outcomes: string[];
+  };
   preview: {
     what: string;
     why: string;

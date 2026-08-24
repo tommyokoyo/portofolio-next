@@ -1,8 +1,8 @@
 ---
 title: "Android Runtime Analysis with Frida"
-description: "A beginner-friendly breakdown of how runtime instrumentation is used to understand Android application behavior."
+description: "How runtime instrumentation helps inspect Android application behavior while the app is running."
 date: 2025-05-18
-tags: ["Mobile Security", "Frida", "Android"]
+tags: ["Mobile Security", "Frida", "Runtime Analysis"]
 draft: false
 ---
 ## Understanding Android Runtime Analysis

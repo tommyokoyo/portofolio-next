@@ -9,7 +9,7 @@ import { Surface } from "@/components/surface";
 import { type LabPost } from "@/components/writing/posts";
 import { cn } from "@/lib/utils";
 
-const filters = ["All", "Frida", "AppSec", "DevSecOps", "Mobile Security"];
+const filters = ["All", "AppSec", "API Security", "Mobile Security", "Runtime Analysis", "Frida", "DevSecOps", "Network Security"];
 
 export function WritingLabPage({ posts }: { posts: LabPost[] }) {
   const [activeTag, setActiveTag] = useState("All");

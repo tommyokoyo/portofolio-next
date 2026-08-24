@@ -60,7 +60,7 @@ const capabilities: CapabilityGroup[] = [
 const experience: ExperienceEntry[] = [
   {
     title: "Information Security Analyst",
-    company: "Current Role",
+    company: "Fintech application security",
     range: "Current",
     context: "Fintech application security testing across mobile apps, web applications, APIs, cloud services, and internet-facing systems.",
     systemWork: [
@@ -76,8 +76,8 @@ const experience: ExperienceEntry[] = [
   },
   {
     title: "Junior Information Security Analyst",
-    company: "Previous Role",
-    range: "Previous",
+    company: "Application security and vulnerability assessment",
+    range: "Earlier role",
     context: "Vulnerability assessment work for web applications, APIs, networks, and development environments.",
     systemWork: [
       "Performed vulnerability assessments on web applications and APIs to identify security weaknesses before deployment.",
@@ -91,8 +91,8 @@ const experience: ExperienceEntry[] = [
   },
   {
     title: "Information Security Intern",
-    company: "Internship",
-    range: "Early Experience",
+    company: "Financial-sector security support",
+    range: "Internship",
     context: "Entry-level security support across network reconnaissance, awareness training, monitoring, and internal testing.",
     systemWork: [
       "Assisted in network reconnaissance and asset discovery to identify exposed services and potential security risks.",
@@ -154,7 +154,7 @@ function CapabilitySystem() {
       <SectionIntro
         kicker="Security areas"
         title="What I work on."
-        body="A direct view of the main areas I work across in application security, mobile testing, DevSecOps, and tooling."
+        body="The main areas I work across in application security, mobile testing, DevSecOps, and tooling."
       />
       <div className="grid gap-4 md:grid-cols-2">
         {capabilities.map((capability, index) => (
@@ -227,7 +227,7 @@ function ExperienceTimeline() {
       <SectionIntro
         kicker="Experience"
         title="Security work and responsibilities."
-        body="A summary of the application security, mobile testing, CI/CD security, and vulnerability assessment work I have done."
+        body="Application security, mobile testing, CI/CD security, and vulnerability assessment work I have done across real systems."
       />
       <div className="relative space-y-6">
         <motion.div

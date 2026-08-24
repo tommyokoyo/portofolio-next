@@ -6,6 +6,26 @@
     "type": "backend",
     "tags": ["AppSec", "DevSecOps", "API Security"],
     "githubUrl": "https://github.com/tommyokoyo/Insecure-API",
+    "evidence": {
+      "role": "Backend and security implementation",
+      "stack": ["Node.js", "API security", "OWASP API Top 10", "CI/CD security"],
+      "status": "Public training repository",
+      "source": "Public GitHub repository",
+      "built": [
+        "Intentionally vulnerable API flows with secure comparison patterns.",
+        "Security testing examples for authentication, authorization, and API abuse cases.",
+        "Pipeline-oriented checks to show where automated testing fits into delivery."
+      ],
+      "demonstrates": [
+        "How API vulnerabilities appear in real request flows.",
+        "How insecure behavior can be compared directly with safer implementation patterns.",
+        "How security examples can support developer training."
+      ],
+      "outcomes": [
+        "Creates a repeatable API security learning environment.",
+        "Makes OWASP API issues easier to test, explain, and remediate."
+      ]
+    },
     "preview": {
       "what": "An intentionally vulnerable API system with insecure and secure implementations.",
       "why": "Built to make OWASP API risks easier to test, explain, and fix.",
@@ -34,6 +54,26 @@
     "type": "backend",
     "tags": ["AppSec", "API Security"],
     "githubUrl": "https://github.com/tommyokoyo/MpesaSimulatorDemo",
+    "evidence": {
+      "role": "Backend API simulation",
+      "stack": ["API design", "Payment workflow testing", "Callback simulation", "Local integration testing"],
+      "status": "Public demo repository",
+      "source": "Public GitHub repository",
+      "built": [
+        "Offline payment API flows that mirror common M-Pesa Daraja integration behavior.",
+        "Callback handling paths for testing payment state changes.",
+        "A local testing setup that avoids dependency on live payment credentials."
+      ],
+      "demonstrates": [
+        "How payment integrations can be tested before production access.",
+        "How callback-heavy API behavior can be simulated locally.",
+        "How controlled test systems reduce integration friction."
+      ],
+      "outcomes": [
+        "Supports safer payment workflow testing.",
+        "Gives developers a repeatable local environment for integration checks."
+      ]
+    },
     "preview": {
       "what": "An offline simulator for M-Pesa Daraja API payment flows.",
       "why": "Built to test payment integrations without relying on live payment infrastructure.",
@@ -62,6 +102,26 @@
     "type": "security",
     "tags": ["Mobile Security", "AppSec"],
     "githubUrl": "https://github.com/tommyokoyo/IOS-security",
+    "evidence": {
+      "role": "Mobile security research and tooling",
+      "stack": ["iOS security", "Mobile auditing", "Security scripts", "Testing guides"],
+      "status": "Public security notes and scripts",
+      "source": "Public GitHub repository",
+      "built": [
+        "A collected set of scripts and notes for iOS application security review.",
+        "Repeatable mobile audit references for common testing tasks.",
+        "Practical guide material for moving from setup into testing."
+      ],
+      "demonstrates": [
+        "How mobile security checks can be organized for reuse.",
+        "How scripts and notes can support consistent audit workflows.",
+        "How mobile testing knowledge can be documented clearly."
+      ],
+      "outcomes": [
+        "Improves repeatability during iOS security review.",
+        "Reduces setup friction when moving into mobile application testing."
+      ]
+    },
     "preview": {
       "what": "A repository of iOS application security auditing scripts and guides.",
       "why": "Built to support repeatable iOS security review and testing workflows.",
@@ -90,6 +150,26 @@
     "type": "security",
     "tags": ["Mobile Security", "Frida", "Runtime Analysis"],
     "githubUrl": "https://github.com/tommyokoyo/Frida-scripts",
+    "evidence": {
+      "role": "Runtime instrumentation tooling",
+      "stack": ["Frida", "Android", "Java runtime hooks", "Mobile security testing"],
+      "status": "Public script repository",
+      "source": "Public GitHub repository",
+      "built": [
+        "Reusable Frida scripts for Android runtime inspection.",
+        "Hooks for observing application behavior while code is executing.",
+        "Testing helpers for tamper checks, SSL pinning validation, and method tracing."
+      ],
+      "demonstrates": [
+        "How runtime analysis exposes behavior that static review can miss.",
+        "How instrumentation scripts support repeatable Android testing.",
+        "How Frida can be used to validate mobile application controls."
+      ],
+      "outcomes": [
+        "Speeds up Android runtime analysis setup.",
+        "Supports deeper testing of application behavior and tamper controls."
+      ]
+    },
     "preview": {
       "what": "A collection of Frida scripts for Android runtime instrumentation.",
       "why": "Built to inspect app behavior while the application is running.",
@@ -118,6 +198,26 @@
   "type": "frontend",
   "tags": ["Frontend", "Algorithms", "Interactive Learning"],
   "externalUrl": "https://alp.okoyo.dev",
+  "evidence": {
+    "role": "Frontend engineering and learning-system design",
+    "stack": ["Next.js", "TypeScript", "pnpm monorepo", "Interactive visualization"],
+    "status": "Live frontend project",
+    "source": "Live demo available",
+    "built": [
+      "Interactive algorithm lessons driven by execution traces.",
+      "Step-by-step visual states for sorting, recursion, and heap concepts.",
+      "Guided prediction checkpoints and algorithm comparison views."
+    ],
+    "demonstrates": [
+      "How frontend interfaces can make abstract execution behavior visible.",
+      "How reusable data contracts can connect algorithm engines to learning UI.",
+      "How complex technical topics can be turned into interactive learning flows."
+    ],
+    "outcomes": [
+      "Turns algorithm execution into an inspectable learning experience.",
+      "Shows frontend work through interaction quality rather than static screenshots."
+    ]
+  },
   "interfaceFocus": [
     "Step-by-step visualization of algorithm execution and state changes.",
     "Guided prediction checkpoints that encourage learners to reason about what an algorithm will do next.",

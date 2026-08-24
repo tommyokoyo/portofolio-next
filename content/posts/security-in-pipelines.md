@@ -1,8 +1,8 @@
 ---
 title: "Security in CI/CD Pipelines"
-description: "A beginner-friendly breakdown of how security is integrated into modern CI/CD pipelines and why DevSecOps matters."
+description: "How security checks fit into CI/CD pipelines and improve feedback during software delivery."
 date: 2025-03-02
-tags: ["DevSecOps", "CI/CD", "Security Automation"]
+tags: ["DevSecOps", "CI/CD Security", "Security Automation"]
 draft: false
 ---
 ## Understanding Security in CI/CD Pipelines

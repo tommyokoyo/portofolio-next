@@ -1,6 +1,6 @@
 ---
 title: "Frida APIs"
-description: "A beginner-friendly breakdown of Frida's runtime instrumentation APIs and how they are used in security testing."
+description: "A practical breakdown of Frida's runtime instrumentation APIs and how they are used in security testing."
 date: 2024-12-13
 tags: ["Frida", "Mobile Security", "Runtime Analysis"]
 draft: false

@@ -43,6 +43,16 @@ export function WorkCaseStudyPage({ project }: { project: WorkProject }) {
           <CaseBlock title="Problem" body={project.caseStudy.problem} />
         </div>
 
+        <Surface className="mt-4 p-6 sm:p-7">
+          <h2 className="text-2xl font-semibold text-ink">Project Evidence</h2>
+          <div className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+            <EvidenceItem label="Role" value={project.evidence.role} />
+            <EvidenceItem label="Status" value={project.evidence.status} />
+            <EvidenceItem label="Source" value={project.evidence.source} />
+            <EvidenceItem label="Stack" value={project.evidence.stack.join(", ")} />
+          </div>
+        </Surface>
+
         <div className="mt-4 grid gap-4 lg:grid-cols-[1.1fr_0.9fr]">
           <Surface className="p-6 sm:p-7">
             <h2 className="text-2xl font-semibold text-ink">System Design</h2>
@@ -63,6 +73,12 @@ export function WorkCaseStudyPage({ project }: { project: WorkProject }) {
               ))}
             </div>
           </Surface>
+        </div>
+
+        <div className="mt-4 grid gap-4 lg:grid-cols-3">
+          <EvidenceList title="What I Built" items={project.evidence.built} />
+          <EvidenceList title="What It Demonstrates" items={project.evidence.demonstrates} />
+          <EvidenceList title="Outcome" items={project.evidence.outcomes} />
         </div>
 
         {project.interfaceFocus && (
@@ -123,6 +139,28 @@ function CaseBlock({ title, body }: { title: string; body: string }) {
     <Surface className="p-6 sm:p-7">
       <h2 className="text-2xl font-semibold text-ink">{title}</h2>
       <p className="mt-5 text-sm leading-6 text-muted">{body}</p>
+    </Surface>
+  );
+}
+
+function EvidenceItem({ label, value }: { label: string; value: string }) {
+  return (
+    <div className="rounded-[8px] border border-line/55 bg-canvas/35 p-4">
+      <p className="text-xs font-medium uppercase tracking-[0.14em] text-muted">{label}</p>
+      <p className="mt-2 text-sm leading-6 text-ink">{value}</p>
+    </div>
+  );
+}
+
+function EvidenceList({ title, items }: { title: string; items: string[] }) {
+  return (
+    <Surface className="p-6 sm:p-7">
+      <h2 className="text-xl font-semibold text-ink">{title}</h2>
+      <div className="mt-5 space-y-3">
+        {items.map((item) => (
+          <p key={item} className="text-sm leading-6 text-muted">{item}</p>
+        ))}
+      </div>
     </Surface>
   );
 }
